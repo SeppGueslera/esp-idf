@@ -1,0 +1,44 @@
+  "name": "mcadc",
+  "title": "mcadc",
+  "description": "My custom development platform",
+  "homepage": "https://mycompany.com",
+  "license": "Apache-2.0",
+  "keywords": ["keyword_1", "keyword_N"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeppGueslera/esp-idf.git"
+  },
+  "version": "0.0.0",
+  "frameworks": {
+    "%FRAMEWORK_MCADC_1%": {
+      "package": "framework-%FRAMEWORK_MCADC_1%",
+      "script": "builder/frameworks/%FRAMEWORK_MCADC_1%.py"
+    },
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": ">=1.40803.0,<1.40805.0"
+    },
+    "framework-%FRAMEWORK_MCADC_1%": {
+      "type": "framework",
+      "optional": true,
+      "version": "~1.10607.0"
+    },
+    "framework-%FRAMEWORK_NAME_N%": {
+      "type": "framework",
+      "optional": true,
+      "version": "~1.117.0"
+    },
+    "tool-direct-vcs-url": {
+      "type": "uploader",
+      "optional": true,
+      "version": "https://github.com/SeppGueslera/esp-idf.git"
+    }
+  },
+  "pythonPackages": {
+    "pypi-pkg-1": "1.2.3",
+    "pypi-pkg-2": ">=2.3, <3"
+  }
+}
